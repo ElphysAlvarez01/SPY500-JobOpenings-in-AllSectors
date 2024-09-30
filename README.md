@@ -1,21 +1,23 @@
 # SPY500 and Job Openings Across All Sectors Analysis
-### Project Overview
->> This project analyzes the relationship between the SPY 500 Index, job openings across various sectors (JOLTS data), and unemployment trends. The aim is to uncover insights into how employment trends impact stock market performance and vice versa, especially during different economic cycles.
+## Project Overview
+> This project analyzes the relationship between the SPY 500 Index, job openings across various sectors (JOLTS data), and unemployment trends. The aim is to uncover insights into how employment trends impact stock market performance and vice versa, especially during different economic cycles.
 
-### Data Sources
-- JOLTS Data (Job Openings and Labor Turnover Survey): This data provides insights into job openings across various sectors.
-- SPY 500 Index: Used to measure the overall market performance.
-- Unemployment Data: Captures unemployment trends across the U.S.
+## Data Sources
 
-### Tools and Libraries Used
-- Python 3.x
-- Pandas: For data manipulation and preprocessing.
-- NumPy: For numerical computations.
-- Matplotlib / Plotly: For data visualization and trend analysis.
-- SciPy: For advanced statistical analysis.
-- sklearn: For correlation and regression analysis.
+>- JOLTS Data (Job Openings and Labor Turnover Survey): This data provides insights into job openings across various sectors.
+>- SPY 500 Index: Used to measure the overall market performance.
+>- Unemployment Data: Captures unemployment trends across the U.S.
 
-### Steps: 
+## Tools and Libraries Used
+
+>- Python 3.x
+>- Pandas: For data manipulation and preprocessing.
+>- NumPy: For numerical computations.
+>- Matplotlib / Plotly: For data visualization and trend analysis.
+>- SciPy: For advanced statistical analysis.
+>- sklearn: For correlation and regression analysis.
+
+## Steps: 
 ### **1. Data Preparation:**
 - Merging Datasets: Combined JOLTS data, SPY 500 index data, and unemployment data.
 - Data Cleaning: Date formats, and round the values for consistency, and ensure the start date (2001-01-01) is the same across files.
