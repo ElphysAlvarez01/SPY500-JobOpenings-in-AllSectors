@@ -1,31 +1,33 @@
 # SPY500 and Job Openings Across All Sectors Analysis
+## Why does 2024 feel so weird? 
+
 ## Project Overview
 > This project analyzes the relationship between the SPY 500 Index, job openings across various sectors (JOLTS data), and unemployment trends. The aim is to uncover insights into how employment trends impact stock market performance and vice versa, especially during different economic cycles.
 
 ## Data Sources
 
->- JOLTS Data (Job Openings and Labor Turnover Survey): This data provides insights into job openings across various sectors.
->- SPY 500 Index: Used to measure the overall market performance.
->- Unemployment Data: Captures unemployment trends across the U.S.
+>- **JOLTS Data (Job Openings and Labor Turnover Survey):** This data provides insights into job openings across various sectors.
+>- **SPY 500 Index:** Used to measure the overall market performance.
+>- **Unemployment Data:** Captures unemployment trends across the U.S.
 
 ## Tools and Libraries Used
 
 >- Python 3.x
->- Pandas: For data manipulation and preprocessing.
->- NumPy: For numerical computations.
->- Matplotlib / Plotly: For data visualization and trend analysis.
->- SciPy: For advanced statistical analysis.
->- sklearn: For correlation and regression analysis.
+>- **Pandas:** For data manipulation and preprocessing.
+>- **NumPy:** For numerical computations.
+>- **Matplotlib / Plotly:** For data visualization and trend analysis.
+>- **SciPy:** For advanced statistical analysis.
+>- **sklearn:** For correlation and regression analysis.
 
 ## Steps: 
 ### **1. Data Preparation:**
-- Merging Datasets: Combined JOLTS data, SPY 500 index data, and unemployment data.
-- Data Cleaning: Date formats, and round the values for consistency, and ensure the start date (2001-01-01) is the same across files.
+- **Merging Datasets:** Combined JOLTS data, SPY 500 index data, and unemployment data.
+- **Data Cleaning:** Date formats, and round the values for consistency, and ensure the start date (2001-01-01) is the same across files.
 
 ### **2. Series of Analysis & Visualizations:**
   #### **A. Correlation Matrix of all JOLTs Sectors + Overall JOLTs + Unemployed Data:**
   - At a glance, it appears that there are many strong relationships across the sectors. 
-  - The negative correlation of -0.524 between total job openings (JTSJOL_TOTAL) and unemployment indicates that as job openings increase, unemployment tends to decrease, and vice versa.
+  - The negative correlation of (-0.524) between total job openings (JTSJOL_TOTAL) and unemployment indicates that as job openings increase, unemployment tends to decrease, and vice versa.
   - Similarly, the sectors shown, such as Leisure and Hospitality (-0.546) and Professional and Business Services (-0.495), exhibit strong negative correlations with unemployment, suggesting that increases in job openings in these sectors are associated with decreases in overall unemployment. This may potentially be due to the number of employees in this field.
   #### **B. Annual Correlation of all JOLTs Sectors + Overall JOLTS + Unemployed Data:**
   - Since the initial correlation analysis was looking at the overall data, I felt it did not tell the entire story. As we know, the labor market has changed over time. Therefore, I wanted to understand how the relationships between U.S. Job Openings across sectors, and unemployed data may potentially influence each other.
