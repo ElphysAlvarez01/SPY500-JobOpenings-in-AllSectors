@@ -1,4 +1,4 @@
-# SPY500 and Job Openings Across All Sectors Analysis
+![](Banner_SPY_JOLTS_AllSectors.png)
 ## $${\color{red}Why \ does \ 2024 \ look \ like \ that\ ? \ Are \ we \ being \ lobstered?}$$
 
 ## Project Overview
