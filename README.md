@@ -88,7 +88,7 @@
 
 - After generating the images, I noticed a similarity in a few years. Therefore, I decided to conduct a clustering analysis to segment the years.
 
-  #### **H. K-means Clustering Analysis based on the strong correlation relationship between sectors for that specific year:**
+  #### **G. K-means Clustering Analysis based on the strong correlation relationship between sectors for that specific year:**
 - Cluster analysis #1: The first analysis was done with the strong correlations for each year.
 > Cluster 1: Years [2001, 2008, 2014, 2020, 2021, 2024]
 > 
