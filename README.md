@@ -38,7 +38,7 @@
 
   #### **3. Analysis of Volatility U.S. Job Openings Percentage Changes with 1-Standard Deviation Bands:**
   - A Standard Deviation Analysis was conducted to highlight periods with significant deviation from the mean. The purpose was to observe when the volatility has diverged from the normal trend.
-  - As you can see, there are periods when the bands expand due to significant changes in previous months which then widen the bands which can reflect expansion after a period of contraction. For example, after 2001, after 2008, after 2020.
+  - As you can see, there are periods when the Standard Deviation bands expand due to significant changes in previous months which then widen the bands which can reflect expansion after a period of contraction. For example, after economic periods such as  2001, 2008, and 2020.
     
 ![](images/jolts_std.png)
     
