@@ -2,7 +2,7 @@
 ## Why does 2024 feel so weird? 
 
 ## Project Overview
-> This project analyzes the relationship between the SPY 500 Index, job openings across various sectors (JOLTS data), and unemployment trends. The aim is to uncover insights into how employment trends impact stock market performance and vice versa, especially during different economic cycles.
+> This project analyzes the relationship between the SPY 500 Index, job openings across various sectors (JOLTS data), and unemployment trends. The aim is to uncover insights into how Job openings and employment trends impact stock market performance and vice versa, especially during different economic cycles. Furthermore, there is an aim to conduct changes in correlations between sectors and changes in their relationship throughout time. 
 
 ## Data Sources
 
@@ -22,15 +22,15 @@
 ## Steps: 
 ### **1. Data Preparation:**
 - **Merging Datasets:** Combined JOLTS data, SPY 500 index data, and unemployment data.
-- **Data Cleaning:** Date formats, and round the values for consistency, and ensure the start date (2001-01-01) is the same across files.
+- **Data Cleaning:** Date formats, round the values for consistency, and ensure the start date (2001-01-01) is the same across files.
 
 ### **2. Series of Analysis & Visualizations:**
-  #### **A. Correlation Matrix of all JOLTs Sectors + Overall JOLTs + Unemployed Data:**
+  #### **A. Correlation Matrix of all JOLTs Sectors + Overall JOLTs + Unemployment Data:**
   - At a glance, it appears that there are many strong relationships across the sectors. 
   - The negative correlation of (-0.524) between total job openings (JTSJOL_TOTAL) and unemployment indicates that as job openings increase, unemployment tends to decrease, and vice versa.
-  - Similarly, the sectors shown, such as Leisure and Hospitality (-0.546) and Professional and Business Services (-0.495), exhibit strong negative correlations with unemployment, suggesting that increases in job openings in these sectors are associated with decreases in overall unemployment. This may potentially be due to the number of employees in this field.
-  #### **B. Annual Correlation of all JOLTs Sectors + Overall JOLTS + Unemployed Data:**
-  - Since the initial correlation analysis was looking at the overall data, I felt it did not tell the entire story. As we know, the labor market has changed over time. Therefore, I wanted to understand how the relationships between U.S. Job Openings across sectors, and unemployed data may potentially influence each other.
+  - Similarly, the sectors shown, such as Leisure and Hospitality (-0.546) and Professional and Business Services (-0.495), exhibit strong negative correlations with unemployment, suggesting that increases in job openings in these sectors are associated with decreases in overall unemployment. This may be due to the large number of employees in this field.
+  #### **B. Annual Correlation of all JOLTs Sectors + Overall JOLTS + Unemployment Data:**
+  - Since the initial correlation analysis looked at the overall data that included all sectors, it did not tell the entire story. As we know, the labor market has changed over time. Therefore, I wanted to understand how the relationships between U.S. Job Openings across sectors, and unemployed data may potentially influence each other.
   - A Correlation by sector across the  years was performed. A table was created to look at each sector (Sector 1) and its relationship to other sectors (Sector 2). Then a correlation matrix was created for each sector which displayed how the relationships have changed over time.
     
 **Here is an Example:**
@@ -48,18 +48,26 @@
 
 ![](images/unemployment_std.png)
 
-
 **Summary Std Analysis:**
 > - When there are large, sudden deviations (2001,2008,2020), the calculation of the standard deviation reflects this increased variability, making the bands wider in subsequent months.
 > - As you can see, the volatility increases during or after recession periods. 
-> - Lastly, when looking at the JOLTs and unemployment data, you can see more variability in the Job Openings. I believe this could be due to businesses prioritizing margins instead of growth and expansion during that period. Therefore, businesses stop hiring and focus on surviving with their current workforce.
+> - Lastly, when looking at the JOLTs and unemployment data, you can see more variability in the Job Openings compared to the unemployment data. I believe this could be due to businesses prioritizing margins instead of growth and expansion during that period. Therefore, businesses stop hiring and focus on surviving with their current workforce. I assume that job openings are impacted first and at a higher rate compared to unemployment which may not be impacted until it is necessary. 
 
   #### **E. Analysis of Contraction and Expansion Periods in the U.S. Job Openings & Unemployment by measuring Pct Change in values:**
-  - The purpose of this analysis was to trend change in  values instead of the standard deviation from the mean as in the previous example.
-  - Please note that two analyses were done to assess contraction and expansion periods. The first was with the std and the other was with the pct in values. I am only including the one with the values here:
-
+  - After looking at the volatility in the previous analysis, it inspired a few additional analyses in contraction and expansion periods in the U.S. Job Openings and unemployment. 
+  - Please note that two analyses were done to assess contraction and expansion periods in slightly different ways. The first was with the std and the other was with the pct change in values. I am only including the one with the pct change in values here to display the trend changes and contraction and expansion period.
+>
+> ### **Expansion and Contraction Definitions:**
+>  **Expansion** is defined as a positive percentage change.
+>- For Job Openings(JTSJOL_TOTAL), it indicates job growth.
+>- For Unemployment data(UNEMPLOYED), it indicates an increase in unemployment, which can be interpreted in specific contexts (e.g., a rising unemployment rate during economic shifts).
+>  
+>  **Contraction** is defined as a negative percentage change.
+>- For Job Openings(JTSJOL_TOTAL), it signifies a slowdown in job growth.
+>- For unemployment data(UNEMPLOYED), represents a decrease in unemployment, indicating economic improvement.
+>
 ![](images/jolts_cycles.png)
-#### Why does 2024 look like that?
+#### Why does 2024 look like that? Are we being lobstered? 
 ![](images/unemployment_cycles.png)
 
   > #### **Summary of Cycles:**
