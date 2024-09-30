@@ -1,5 +1,5 @@
 # SPY500 and Job Openings Across All Sectors Analysis
-## Why does 2024 feel so weird? 
+## $${\color{red}Why \ does \ 2024 \ look \ like \ that\ ? \ Are \ we \ being \ lobstered?}$$
 
 ## Project Overview
 > This project analyzes the relationship between the SPY 500 Index, job openings across various sectors (JOLTS data), and unemployment trends. The aim is to uncover insights into how Job openings and employment trends impact stock market performance and vice versa, especially during different economic cycles. Furthermore, there is an aim to conduct changes in correlations between sectors and changes in their relationship throughout time. 
@@ -67,7 +67,7 @@
 >- For unemployment data(UNEMPLOYED), represents a decrease in unemployment, indicating economic improvement.
 >
 ![](images/jolts_cycles.png)
-#### Why does 2024 look like that? Are we being lobstered? 
+## $${\color{red}Why \ does \ 2024 \ look \ like \ that\ ? \ Are \ we \ being \ lobstered?}$$
 ![](images/unemployment_cycles.png)
 
   > #### **Summary of Cycles:**
