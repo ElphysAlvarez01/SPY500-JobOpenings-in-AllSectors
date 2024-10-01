@@ -59,14 +59,14 @@ The analysis revealed periods where the Standard Deviation bands expanded due to
 
 **Comparison with JOLTS:** Unemployment data exhibits relative stability compared to the overall Job Openings and Labor Turnover Survey (JOLTS) values, characterized by narrower bands throughout most periods.
 
-**COVID-19 Impact**
-- Around 2020, a sharp spike in unemployment changes deviated significantly beyond one standard deviation from the mean, reflecting the economic impact of the COVID-19 pandemic and the subsequent surge in unemployment rates across multiple sectors.
+**COVID-19 Impact:** Around 2020, a sharp spike in unemployment changes deviated significantly beyond one standard deviation from the mean, reflecting the economic impact of the COVID-19 pandemic and the subsequent surge in unemployment rates across multiple sectors.
 
 ![](images/unemployment_std.png)
 
 **Summary Std Analysis:**
-> - When there are large, sudden deviations (2001,2008,2020), the calculation of the standard deviation reflects this increased variability, making the bands wider in subsequent months.
-> - As you can see, the volatility increases during or after recession periods. 
+- When there are large, sudden deviations (2001,2008,2020), the calculation of the standard deviation reflects this increased variability, making the bands wider in subsequent months.
+- As you can see, the volatility increases during or after recession periods.
+ 
 > **Job Openings vs. Unemployment:**
 A comparison of JOLTS and unemployment data reveals greater variability in job openings than in unemployment figures.
 This may be attributed to businesses prioritizing operational efficiency over growth during downturns, leading to reduced hiring while maintaining current workforce levels. Job openings are likely affected more rapidly than unemployment rates, which may only rise when absolutely necessary.
@@ -84,7 +84,7 @@ This may be attributed to businesses prioritizing operational efficiency over gr
 >  **Contraction** is defined as a negative percentage change.
 >- For the Job Openings (JTSJOL_TOTAL), it signifies a slowdown in job growth.
 >- For the unemployment data (UNEMPLOYED), represents a decrease in unemployment, indicating economic improvement.
->
+
 ![](images/jolts_cycles.png)
 ## $${\color{red}Why \ does \ 2024 \ look \ like \ that\ ? \ Are \ we \ being \ lobstered?}$$
 ![](images/unemployment_cycles.png)
@@ -109,8 +109,10 @@ This may be attributed to businesses prioritizing operational efficiency over gr
 
 #### **7. K-means Clustering Analysis based on the strong correlation relationship between sectors for that specific year:**
 - Cluster analysis #1: The first analysis was done with the strong correlations for each year.
+  
 **Cluster 1: Years [2001, 2008, 2014, 2020, 2021, 2024]**
   - High correlation years, indicating strong inter-sector relationships during economic uncertainty or recovery.
+    
 **Cluster 2: Years [2002, 2005, 2011, 2018, 2022, 2023]**
 - Moderate correlation years with more stable relationships.
   
@@ -118,8 +120,10 @@ This may be attributed to businesses prioritizing operational efficiency over gr
 - Years with weak relationships, suggesting disconnection among sectors.
   
 - Cluster analysis #2: The second analysis was done with more features such as average correlation value and std for the year.
+  
 **Cluster 0: Years [2001, 2005, 2008, 2009, 2011, 2014, 2017, 2018, 2020, 2021, 2023]**
 **Cluster 1: Years [2002, 2003, 2004, 2006, 2007, 2010, 2012, 2013, 2015, 2016, 2019, 2022]**
 **Cluster 2: Years [2024]**
+
 - In the second analysis, 2001, 2008, 2020, and 2021 were all still segmented in the same cluster. However, 2024 was placed separately. I wonder if this is due to the significant change in std which was a new feature in the model. 
 ![](images/WHATDOESITMEAN.jpg)
