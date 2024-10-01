@@ -37,9 +37,10 @@ Analysis was conducted on Sept 2024 and all files were as of July 2024.
 #### **2. Annual Correlation of all JOLTs Sectors + Overall JOLTS + Unemployment Data:**
 **Analyzing Correlations Over Time**
 - Limitations of Initial Analysis: The initial correlation analysis encompassed overall data across all sectors, which did not fully capture the evolving dynamics of the labor market.
+- 
 **Detailed Sector Correlation**
 - A correlation analysis by sector was conducted to understand the interactions between U.S. job openings and unemployment data over time.
-- A table was created to examine relationships between individual sectors (Sector 1) and other sectors (Sector 2), followed by the development of a correlation matrix to illustrate how these relationships have shifted.
+- A table was created to examine relationships between individual sectors (Sector 1) and other sectors (Sector 2), followed by the development of a correlation matrix to display how these relationships have changed over time.
     
 **Here is an Example:**
 ![](images/jolts_annual_correlations.png)
@@ -47,6 +48,7 @@ Analysis was conducted on Sept 2024 and all files were as of July 2024.
   #### **3. Analysis of Volatility U.S. Job Openings Percentage Changes with 1-Standard Deviation Bands:**
 **Standard Deviation Analysis**
 Identifying Volatility: A Standard Deviation Analysis was performed to highlight periods of significant deviation from the mean, aiming to observe when volatility diverges from normal trends.
+
 **Expansion After Contraction**
 The analysis revealed periods where the Standard Deviation bands expanded due to substantial changes in previous months, indicating potential economic expansion following contraction phases (e.g., 2001, 2008, 2020).
     
@@ -55,6 +57,7 @@ The analysis revealed periods where the Standard Deviation bands expanded due to
   #### **4. Analysis of Volatility U.S. Unemployment Percentage Changes with 1-Standard Deviation Bands:**
 **Unemployment Data Stability**
 Comparison with JOLTS: Unemployment data exhibits relative stability compared to the overall Job Openings and Labor Turnover Survey (JOLTS) values, characterized by narrower bands throughout most periods.
+
 **COVID-19 Impact**
 - Around 2020, a sharp spike in unemployment changes deviated significantly beyond one standard deviation from the mean, reflecting the economic impact of the COVID-19 pandemic and the subsequent surge in unemployment rates across multiple sectors.
 
@@ -69,6 +72,7 @@ This may be attributed to businesses prioritizing operational efficiency over gr
 
   #### **5. Analysis of Contraction and Expansion Periods in the U.S. Job Openings & Unemployment by measuring Pct Change in values:**
 - Inspired by Previous Findings: Insights from the volatility analysis prompted further investigations into contraction and expansion periods in U.S. job openings and unemployment.
+
 **Methodological Distinction:** Please note, that two analyses were conducted to evaluate contraction and expansion periods from different perspectives: one using standard deviation and the other focusing on percentage changes. Here, only the percentage change analysis is presented to illustrate trend shifts during these periods.
 >
 > ### **Expansion and Contraction Definitions:**
