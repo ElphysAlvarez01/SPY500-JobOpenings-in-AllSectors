@@ -29,6 +29,7 @@ Analysis was conducted on Sept 2024 and all files were as of July 2024.
 **Overview of Job Openings and Unemployment Relationships**
 - Strong Sector Relationships: Initial observations indicate robust relationships across various sectors.
 - Negative Correlation: A notable negative correlation of -0.524 between total job openings (JTSJOL_TOTAL) and unemployment suggests that as job openings increase, unemployment tends to decrease, and vice versa.
+
 **Sector-Specific Insights**
 - Sectors such as Leisure and Hospitality (-0.546) and Professional and Business Services (-0.495) also show strong negative correlations with unemployment.
 - These trends imply that increases in job openings within these sectors are linked to reductions in overall unemployment, likely due to the significant number of employees in these fields.
