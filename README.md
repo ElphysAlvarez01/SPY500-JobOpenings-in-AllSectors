@@ -104,16 +104,22 @@ This may be attributed to businesses prioritizing operational efficiency over gr
 ![](images/StrongNegativeRelationships.png)
 ![](images/StrongPositiveRelationships.png)
 
-- **After generating the images, I noticed a similarity in a few years. Therefore, I decided to conduct a clustering analysis to segment the years.**
+- **After generating the images, I noticed similarities across certain years. Therefore, I decided to conduct a clustering analysis to segment the years.**
 
   #### **7. K-means Clustering Analysis based on the strong correlation relationship between sectors for that specific year:**
 - Cluster analysis #1: The first analysis was done with the strong correlations for each year.
-> Cluster 1: Years [2001, 2008, 2014, 2020, 2021, 2024]
-> 
-> Cluster 2: Years [2002, 2005, 2011, 2018, 2022, 2023]
-> 
-> Cluster 0: Years [2003, 2004, 2006, 2007, 2009, 2010, 2012, 2013, 2015, 2016, 2017, 2019]
+When 
 
+> Cluster 1: Years [2001, 2008, 2014, 2020, 2021, 2024]
+> Cluster 1: High correlation years, indicating strong inter-sector relationships during economic uncertainty or recovery (2001, 2008, 2014, 2020, 2021, 2024).
+> ----------
+> Cluster 2: Years [2002, 2005, 2011, 2018, 2022, 2023]
+> Cluster 2: Moderate correlation years with more stable relationships (2002, 2005, 2011, 2018, 2022, 2023).
+> ----------
+> Cluster 0: Years [2003, 2004, 2006, 2007, 2009, 2010, 2012, 2013, 2015, 2016, 2017, 2019]
+> Cluster 0: Years with weak relationships, suggesting disconnection among sectors (2003-2010, 2012-2019).
+> ----------------
+> 
 - Cluster analysis #2: The second analysis was done with more features such as average correlation value and std for the year.
 > Cluster 0: Years [2001, 2005, 2008, 2009, 2011, 2014, 2017, 2018, 2020, 2021, 2023]
 > 
