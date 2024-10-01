@@ -106,25 +106,19 @@ This may be attributed to businesses prioritizing operational efficiency over gr
 
 - **After generating the images, I noticed similarities across certain years. Therefore, I decided to conduct a clustering analysis to segment the years.**
 
-  #### **7. K-means Clustering Analysis based on the strong correlation relationship between sectors for that specific year:**
+#### **7. K-means Clustering Analysis based on the strong correlation relationship between sectors for that specific year:**
 - Cluster analysis #1: The first analysis was done with the strong correlations for each year.
-When 
-
-> Cluster 1: Years [2001, 2008, 2014, 2020, 2021, 2024]
-> Cluster 1: High correlation years, indicating strong inter-sector relationships during economic uncertainty or recovery (2001, 2008, 2014, 2020, 2021, 2024).
-> ----------
-> Cluster 2: Years [2002, 2005, 2011, 2018, 2022, 2023]
-> Cluster 2: Moderate correlation years with more stable relationships (2002, 2005, 2011, 2018, 2022, 2023).
-> ----------
-> Cluster 0: Years [2003, 2004, 2006, 2007, 2009, 2010, 2012, 2013, 2015, 2016, 2017, 2019]
-> Cluster 0: Years with weak relationships, suggesting disconnection among sectors (2003-2010, 2012-2019).
-> ----------------
-> 
+**Cluster 1: Years [2001, 2008, 2014, 2020, 2021, 2024]**
+  - High correlation years, indicating strong inter-sector relationships during economic uncertainty or recovery.
+**Cluster 2: Years [2002, 2005, 2011, 2018, 2022, 2023]**
+- Moderate correlation years with more stable relationships.
+  
+**Cluster 0: Years [2003, 2004, 2006, 2007, 2009, 2010, 2012, 2013, 2015, 2016, 2017, 2019]**
+- Years with weak relationships, suggesting disconnection among sectors.
+  
 - Cluster analysis #2: The second analysis was done with more features such as average correlation value and std for the year.
-> Cluster 0: Years [2001, 2005, 2008, 2009, 2011, 2014, 2017, 2018, 2020, 2021, 2023]
-> 
-> Cluster 1: Years [2002, 2003, 2004, 2006, 2007, 2010, 2012, 2013, 2015, 2016, 2019, 2022]
-> 
-> Cluster 2: Years [2024]
-
+**Cluster 0: Years [2001, 2005, 2008, 2009, 2011, 2014, 2017, 2018, 2020, 2021, 2023]**
+**Cluster 1: Years [2002, 2003, 2004, 2006, 2007, 2010, 2012, 2013, 2015, 2016, 2019, 2022]**
+**Cluster 2: Years [2024]**
+- In the second analysis, 2001, 2008, 2020, and 2021 were all still segmented in the same cluster. However, 2024 was placed separately. I wonder if this is due to the significant change in std which was a new feature in the model. 
 ![](images/WHATDOESITMEAN.jpg)
